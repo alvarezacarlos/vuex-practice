@@ -3,7 +3,7 @@
     <!-- <h3>{{ $store.state.counter }}</h3> -->
     <!-- <h3>{{ counter }}</h3> -->
     <TheCounter />
-    <button @click="addOne">Add 1</button>
+    <button @click="addOne">Add 10</button>
     <ChangeCounter></ChangeCounter>
   </base-container>
 </template>
@@ -27,7 +27,12 @@ export default {
   methods: {
     addOne() {
       // this.$store.state.counter = this.$store.state.counter + 11;
-      this.$store.commit('increment');
+      // this.$store.commit('increment');
+      // this.$store.commit('increase', { value: 10 });
+      this.$store.commit({
+        type: 'increase',
+        value: 10,
+      });
     },
   },
 };
