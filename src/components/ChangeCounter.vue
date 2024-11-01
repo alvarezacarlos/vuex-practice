@@ -5,9 +5,7 @@
 <script>
 export default {
   methods: {
-    addOne() {
-      //   this.$store.state.counter++;
-      // this.$store.commit('increment');
+    addOne() {     
       this.$store.commit('increase', { value: 2 });
     },
   },
