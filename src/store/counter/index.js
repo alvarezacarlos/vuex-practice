@@ -1,6 +1,6 @@
-import actions from './actions'
-import getters from '../getters'
-import mutations from '../mutations'
+import counterActions from './actions'
+import counterGetters from './getters'
+import counterMutations from './mutations'
 
 const counterModule = {
     state() {
@@ -8,9 +8,9 @@ const counterModule = {
             counter: 0,
         }
     },
-    mutations: mutations,
-    actions: actions,
-    getters: getters
+    mutations: counterMutations,
+    actions: counterActions,
+    getters: counterGetters
 }
 
 export default counterModule

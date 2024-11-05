@@ -1,5 +1,6 @@
 export default {
     finalCounter(state) {
+        console.log('hey')
         return state.counter * 2
     },
     normalizeCounter(_, getters) {
